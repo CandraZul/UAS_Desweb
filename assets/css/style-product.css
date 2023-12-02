@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    background-color: #ff0000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header-content {
+    display: flex;
+    background: #ff0000;
+    background: linear-gradient(182deg, #ff0000 5%, #000000 50%, #000000 100%);
+    background: -webkit-linear-gradient(182deg, #ff0000 5%, #000000 50%, #000000 100%);
+    background: -moz-linear-gradient(182deg, #ff0000 5%, #000000 50%, #000000 100%);
+    align-items: center;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo-vair {
+    padding: 20px;
+    margin-left: 40px;
+    height: 5vh;
+}
+
+.navigasi {
+    margin-left: auto; 
+}
+
+.navigasi ul {
+    display: flex;
+    margin-right: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.navigasi ul a {
+    text-decoration: none;
+    color: white;
+    padding: 22px;
+    transition: .2s;
+    margin-left: 22px;
+}
+
+.navigasi ul a:hover {
+    background-color: aliceblue;
+    color: red;
+    font-weight: 400;
+    transition: .2s;
+    transform: skew(15deg) translate(-10px, 0px);
+    -webkit-transform: skew(15deg) translate(-10px, 0px);
+    -moz-transform: skew(15deg) translate(-10px, 0px);
+    box-shadow: -12px 11px 3px -3px rgba(0, 153, 255, 0.62);
+    -webkit-box-shadow: -12px 11px 3px -3px rgba(0, 153, 255, 0.62);
+    -moz-box-shadow: -12px 11px 3px -3px rgba(0, 153, 255, 0.62);
+}
+
+.navigasi ul a li {
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-product{
+    text-align: center;
+    background-color: #00295f;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-bottom: 20px;
+}
+
+.nav-product nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-product a img{
+    text-align: center;
+    width: 18%;
+}
+
+.nav-product a p{
+    color: #fff;
+}
+
+main{
+    margin-top: 5vh;
+}
+
+.card{
+    width: 18em;
+    height: 25em;
+    box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
+    overflow: hidden;
+    color: #4a4a4a;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.img-wrap{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}  
+
+.product-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.card .text {
+    padding: 16px;
+}
+
+.card .text h3 {
+    margin-bottom: 8px ;
+}
+
+.card .text p{
+    margin-bottom: 5px;
+}
+
+
+
+
+
