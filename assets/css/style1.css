@@ -125,7 +125,7 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 .profile-introduction{
     margin-top: 20px;
     display: flex;
-    
+    padding: 20px;
     align-items: center;
     justify-content:space-evenly;
 }
@@ -161,6 +161,18 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     width: 42vw;
     animation: naikTurun 4s infinite;
 }
+/* promo  */
+.promo{
+    width: auto;
+    height: 100vh;
+    background: url(/assets/image/Promo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
 /* product  */
 /* title */
@@ -177,7 +189,7 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     color: red;
 }
 .product{
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     text-align: center;
     background-color: aliceblue;
 }
@@ -185,8 +197,8 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     text-decoration: none;
     font-size: 16pt;
     background-color: #00000059;
-    padding: 20px 100px;
-    margin: 12px;
+    padding: 20px 120px;
+    margin: 20px;
     color: #000000;
     width: 500px;
     border-radius: 20px;
@@ -205,7 +217,7 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 /* card */
 .card{
     width: 18em;
-    height: 29em;
+    height: 32em;
     box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
     overflow: hidden;
     color: #4a4a4a;
@@ -294,7 +306,54 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 
 
 /* testimoni  */
-
+.testimoni {
+    width: 100vw;
+    background: url(/assets/image/bg_testimoni.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: white ;
+    text-align: center;
+    padding: 20px;
+}
+.testi-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    height: 70px;
+}
+.testi-title span{
+    color: red;
+}
+.testi-profile{
+    display: flex;
+}
+.testi-profile img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.testi-profile h2 {
+    font-size: 20pt ;
+    padding: 0;
+}
+.testi-profile p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+.testi-row{
+    display: flex;
+    justify-content: center;
+}
+.testi-row .card-testi{
+    text-align: justify;
+    margin: 20px;
+    background-color: rgba(240, 248, 255, 0.397);
+    width: 600px;
+    padding: 30px;
+    border-top-left-radius: 70px;
+}
 
 /* channel  */
 .channel {
@@ -513,3 +572,23 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
         width: 100%;
     }
 }
+
+.slide-in {
+    animation: slideIn 1s ease; /* Ganti dengan animasi dan waktu yang diinginkan */
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Ganti dengan jarak slide yang diinginkan */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+
