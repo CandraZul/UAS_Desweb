@@ -9,53 +9,6 @@ body{
 *{
     scroll-behavior: smooth;
 }
-
-.jumbotron{
-    width: 100vw;
-    height: 100vh;
-    background: url('/assets/image/jumbotron.gif');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    
-}
-.jumbotron::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5); 
-}
-
-#get-Started{
-    font-size: 16pt;
-    letter-spacing: 3px;
-    color: aliceblue;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    border: 2px solid aliceblue;
-    padding: 1px 30px;
-    margin-left: 45vw;
-    margin-top: 70vh;
-    border-radius: 30px;
-    z-index: 2;
-    animation: fadeInOut 1.2s infinite;
-    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
-    transition: .3s;
-}
-#get-Started:hover{
-    background-color: aliceblue;
-    color: black;
-    animation: none;
-    transform: scale(1.2);
-    transition: .3s;
-}
-
-
 /* header  */
 
 header {
@@ -118,241 +71,72 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 
 
 /* CONTENT  */
-/* profile */
-.profile-introduction{
-    margin-top: 20px;
+.container .img-header{
+    width: 100vw;
+    margin-top: 0;
+    height: 40vh;
+    background: url(/assets/image/bg-header-dealer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+}
+.container{
+    text-align: center;
+}
+.dealer-title{
+    background-color: #000000;
+    color: aliceblue;
+    padding: 10px;
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+}
+.container .dealer-title h1{
+    font-size: 26pt;
+    letter-spacing: 3px;
+}
+.container .dealer-title h1 span{
+    font-size: 26pt;
+    color: red;
+}
+
+.dealer-content {
     display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content:space-evenly;
+    justify-content: center;
+    background-color: aliceblue;
 }
-
-.profile-introduction .introduction {
-    padding: 30px;
-    background: rgba(5, 5, 5, 0.589);
-    color: white;
-    text-align: justify;
-    border-radius: 20px;
-    letter-spacing: 2px;
-    line-height: 1.2em;
-    font-size: 16pt;
-    font-family: 'Kanit', sans-serif;
-    width: 40%;
-    height: 100%;
-}
-
-.introduction a {
+.card-dealer a{
     text-decoration: none;
-    color: white;
-    border: 2px solid aliceblue;
-    padding: 5px 50px;
-    margin-left: 35%;
-    border-radius: 10px;
-}
-
-.introduction a:hover{
-    background-color: white;
     color: black;
 }
-.profile-introduction .img-introduction img{
-    width: 42vw;
-    animation: naikTurun 4s infinite;
+.card-dealer {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
+    background-color: aliceblue;
+    padding: 10px;
+    width: 20vw;
 }
-/* promo  */
-.promo{
-    width: auto;
-    height: 100vh;
-    background: url(/assets/image/Promo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 20px;
-    margin-bottom: 0;
+.card-dealer:hover{
+    background-color: rgb(215, 215, 215);
 }
 
-/* product  */
-/* title */
-.product-title {
-    background-color: #000000;
-    letter-spacing: 3px;
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    align-content: center;
-    font-size: 24pt;
-}
-.product-title span {
-    color: red;
-}
-.product{
-    padding-bottom: 70px;
-    text-align: center;
-    background-color: aliceblue;
-}
-.button-product a{
-    text-decoration: none;
-    font-size: 16pt;
-    background-color: #00000059;
-    padding: 20px 120px;
-    margin: 20px;
-    color: #000000;
-    width: 500px;
+.card-dealer img{
     border-radius: 20px;
 }
-.button-product a:hover {
-    background-color: #000000e8;
-    color: aliceblue;
-    font-size:18pt ;
-    transition: .2s;
-}
-.button-product{
-    margin: 20px;
-    color: #000000;
-}
-
-/* card */
-.card{
-    width: 18em;
-    height: 32em;
-    box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
-    overflow: hidden;
-    color: #4a4a4a;
-    background-color: aliceblue;
-    border-radius: 10px;
-}
-
-.img-wrap{
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    height: 300px;
-}
-
-.img-wrap img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s;
-}
-
-.card:hover .img-wrap img {
-    transform: scale(1.1);
-}  
-
-.product-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-    gap: 20px;
-}
-.product-wrap a {
-    text-decoration: none;
-}
-
-.card .text {
-    padding: 16px;
-}
-
-.card .text h3 {
-    margin-bottom: 8px ;
-}
-
-.card .text p{
-    margin-bottom: 5px;
-}
-
-#detail{
-    margin-top: 15px;
-    width: fit-content;
-    padding: 5px 10px;
-    border: 1px solid rgba(128, 128, 128, 0.422);
-    border-radius: 10px;
-    transition: border-color 0.3s ease, color 0.3s ease;
-}
-
-.card .text p img{
-    margin-left: 60px;
-    width: 25px;
-    vertical-align: middle;
-}
-
-#detail:hover{
-    border: 1px solid rgb(253, 0, 0.4);
-    color: rgb(253, 0, 0.4);
-}
-/* card animation */
-.product-wrap a:nth-child(1){
-    --animate-delay:0.5s;
-}
-.product-wrap a:nth-child(2){
-    --animate-delay:1s;
-}
-.product-wrap a:nth-child(3){
-    --animate-delay:1.5s;
-}
-.product-wrap a:nth-child(4){
-    --animate-delay:2s;
-}
-.product-wrap a:nth-child(5){
-    --animate-delay:2.5s;
-}
-.product-wrap a:nth-child(6){
-    --animate-delay:3s;
-}
-
-
-/* testimoni  */
-.testimoni {
-    width: 100vw;
-    background: url(/assets/image/bg_testimoni.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    color: white ;
-    text-align: center;
-    padding: 20px;
-}
-.testi-title{
-    font-family: 'Bebas Neue', sans-serif;
+.card-dealer h3{
     font-size: 20pt;
-    letter-spacing: 2px;
-    height: 70px;
 }
-.testi-title span{
-    color: red;
-}
-.testi-profile{
-    display: flex;
-}
-.testi-profile img {
-    width: 120px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-.testi-profile h2 {
-    font-size: 20pt ;
-    padding: 0;
-}
-.testi-profile p {
-    font-style: italic;
-    font-size: 1.2em;
-}
-.testi-row{
+.desc-address{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.testi-row .card-testi{
-    text-align: justify;
-    margin: 20px;
-    background-color: rgba(240, 248, 255, 0.397);
-    width: 600px;
-    padding: 30px;
-    border-top-left-radius: 70px;
-}
-.card-testi p {
-    line-height: 1.4em;
+.desc-address p {
+    font-size: 12pt;
+    margin: 5px;
 }
 
 /* channel  */
@@ -391,10 +175,6 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     transform: translateY(-10px);
     transition: .5s;
 }
-
-
-
-
 
 /* footer  */
 .footer{
@@ -634,88 +414,56 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
     }
 
     /* content  */
-    .profile-introduction{
-        justify-content: center;
-    }
-    .profile-introduction .introduction {
-        padding: 30px;
-        background: rgba(5, 5, 5, 0.589);
-        color: white;
-        text-align: justify;
-        border-radius: 20px;
-        letter-spacing: 1px;
-        line-height: 1.2em;
-        font-size: 12pt;
-        font-family: 'Kanit', sans-serif;
-        width: 60%;
-        height: 100%;
-    }
-    .img-introduction{
-        display: none;
-    }
-    .button-product a{
-        text-decoration: none;
-        font-size: 16pt;
-        background-color: #00000059;
-        padding: 20px 40px;
-        margin: 20px;
-        color: #000000;
-        width: 500px;
-        border-radius: 20px;
-    }
-    .testimoni{
-        background-color: #000000;
-        text-align: center;
-    }
-    .testi-title{
-        font-family: 'Bebas Neue', sans-serif;
+    .container .dealer-title h1{
         font-size: 16pt;
         letter-spacing: 1px;
-        height: 50px;
     }
-    .testi-row{
-        margin-top: 50px;
+    .container .dealer-title h1 span{
+        font-size: 16pt;
+        color: red;
+    }
+    .dealer-content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
+        background-color: aliceblue;
     }
-    .testi-profile img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        margin-right: 30px;
+    .card-dealer a{
+        text-decoration: none;
+        color: black;
     }
-    .testi-profile h2 {
-        font-size: 16pt ;
-        padding: 0;
+    .card-dealer {
+        margin: 20px;
+        margin-left: 20vw;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
+        background-color: aliceblue;
+        padding: 10px;
+        width: 60vw;
     }
-    .testi-profile p {
-        font-style: italic;
-        font-size: 12pt;
+    .card-dealer:hover{
+        background-color: rgb(215, 215, 215);
     }
-    .testi-row{
+    
+    .card-dealer img{
+        border-radius: 20px;
+        width: 50vw;
+    }
+    .card-dealer h3{
+        font-size: 14pt;
+    }
+    .desc-address{
         display: flex;
         justify-content: center;
-    }
-    .testi-row .card-testi{
-        text-align: justify;
-        margin: 20px;
-        background-color: rgba(240, 248, 255, 0.397);
-        width: 300px;
-        padding: 30px;
-        border-top-left-radius: 70px;
-    }
-    .testi-profile-desc{
         align-items: center;
-        align-content: center;
     }
-    .card-testi p {
-        line-height: 1.4em;
-        font-size: 12;
+    .desc-address p {
+        font-size: 11pt;
+        margin: 5px;
     }
-    .promo{
-        background-size: contain;
-    }
+
+
     /* footer  */
     .channel p{
         display: none;

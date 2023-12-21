@@ -23,13 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
   
     listItems.forEach((item, index) => {
       item.addEventListener("click", function () {
-        // Hapus kelas 'active' dari semua elemen
+
         listItems.forEach((li) => li.classList.remove("active"));
         sections.forEach((section) => section.classList.remove("active"));
   
-        // Tambahkan kelas 'active' ke elemen yang diklik
         item.classList.add("active");
         sections[index].classList.add("active");
       });
     });
   });
+
+  function toggleMenu() {
+    var navigation = document.querySelector('.navigasi ul');
+    navigation.classList.toggle('show');
+}
