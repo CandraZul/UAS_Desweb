@@ -136,10 +136,9 @@ main{
 
 .product-wrap{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-    gap: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 
 .card .text {
@@ -183,12 +182,10 @@ main{
 .product-wrap a:nth-child(3){
     --animate-delay:1.5s;
 }
-.product-wrap a:nth-child(4){
-    --animate-delay:2s;
+
+.product-wrap .card:not(.matic) {
+    display: none;
 }
-.product-wrap a:nth-child(5){
-    --animate-delay:2.5s;
-}
-.product-wrap a:nth-child(6){
-    --animate-delay:3s;
+.nav-product ul a.active p{
+    color: yellow;
 }
