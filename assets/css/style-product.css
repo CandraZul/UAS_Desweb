@@ -6,7 +6,9 @@
     text-decoration: none;
 }
 body{
-    background-color: darkblue;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
@@ -79,7 +81,7 @@ header {
     position: relative;
     text-align: center;
     background-color: black;
-    border-top: 1px solid darkblue;
+    /* border-top: 1px solid white; */
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     padding-bottom: 20px;
@@ -114,7 +116,7 @@ main{
     box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
     overflow: hidden;
     color: #4a4a4a;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 10px;
 }
 .img-wrap{
@@ -188,4 +190,219 @@ main{
 }
 .nav-product ul a.active p{
     color: yellow;
+}
+
+/* channel  */
+.channel {
+    margin-top: 6vh;
+    display: flex;
+    background-color: darkblue;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 70px;
+    height: 70px;
+}
+.channel p {
+    letter-spacing: 2px;
+    font-size: 30pt;
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.channel p span {
+    color: rgb(0, 0, 0);
+}
+
+.channel-icon {
+    display: flex;
+}
+
+.channel-icon a {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: .2s;
+}
+.channel a:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.channel-icon i {
+    color: aliceblue;
+}
+
+/* footer  */
+.footer{
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    padding-top: 20px;
+}
+
+.left-footer{
+    width: 50vw;
+    
+}
+.left-footer-title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.left-footer-title p{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 900;
+    font-size: 20pt;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.left-footer-title img{
+    margin-left: 8vw;
+    width: 7vw;
+}
+.left-footer-content{
+    display: flex;
+}
+.left-footer-content ul a li{
+    list-style: none;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    line-height: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+.left-footer-content ul a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(202, 201, 201);
+}
+.left-footer-content ul a:hover{
+    color: red;
+}
+.left-footer-content ul a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: red; 
+    transition: width 0.4s ease;
+}
+.left-footer-content ul a:hover::before {
+    animation: hoverUnderline .3s ease 1 forwards;
+}
+.left-footer-content ul {
+    margin-left: 20%;
+    line-height: 2em;
+}
+
+.right-footer{
+    width: auto;
+}
+.contact-us{
+    display:flex ;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-right: 40px;
+    padding: 25px;
+    background: #000000;
+background: linear-gradient(90deg,#000000 0%, #011253 80%);
+background: -webkit-linear-gradient(90deg,#000000 0%, #011253 80%);
+background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
+}
+.contact-us h2{
+    color: aliceblue;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact {
+    margin-left: 10px;
+}
+.contact a{
+    display: flex;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14pt;
+}
+
+.contact a p {
+    margin-left: 20px;
+    text-align: start;
+}
+.contact a:hover{
+    color: red;
+    transform: translateX(20px);
+    transition: .3s;
+}
+
+.copyright{
+    text-align: center;
+    letter-spacing: 2px;
+    width: auto;
+    padding: 40px;
+    padding-top: 60px;
+    font-size: 1em;
+    color: whitesmoke;
+    background-color: #000000;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.25;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.25;
+    }
+    
+}
+@keyframes naikTurun {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(6px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    75% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hoverUnderline {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
 }
