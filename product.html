@@ -10,7 +10,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script type="text/javascript" src="assets/script/product.js"></script>
 </head>
 <body>
     <header>
@@ -38,29 +38,29 @@
                 </ul>
             </nav>
         </div>
-        <div class="nav-product animate__animated animate__fadeInDown">
+        <div class="nav-product animate__animated animate__fadeInDown" id="motor-category">
             <nav>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" data-category="matic" class="active">
                             <img src="./assets/image/icon-matic.png" alt="matic">
                             <p>Matic</p>
                         </a>                        
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-category="e-motor">
                             <img src="./assets/image/icon-electric.png" alt="e-motor">
                             <p>E-Motor</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-category="cub">
                             <img src="./assets/image/icon-cub.png" alt="cub">
                             <p>Cub</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-category="sport">
                             <img src="./assets/image/icon-sport2.png" alt="">
                             <p>Sport</p>
                         </a>
@@ -73,46 +73,7 @@
         <div class="content">
             <div class="product-wrap">
                 <a href="">
-                    <section class="card animate__animated animate__fadeInRight animate__delay-1s">
-                        <div class="img-wrap">
-                            <img src="./assets/image/matic/1.png" alt="matic1">
-                        </div>
-                        <div class="text">
-                            <h3>MX12</h3>
-                            <p>Harga mulai</p>
-                            <h3>Rp 35.999.999,00</h3>
-                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
-                        </div>
-                    </section>
-                </a>
-                <a href="">
-                    <section class="card animate__animated animate__fadeInRight animate__delay-1s">
-                        <div class="img-wrap">
-                            <img src="./assets/image/matic/2.png" alt="matic1">
-                        </div>
-                        <div class="text">
-                            <h3>VRs</h3>
-                            <p>Harga mulai</p>
-                            <h3>Rp 38.999.999,00</h3>
-                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
-                        </div>
-                    </section>
-                </a>
-                <a href="">
-                    <section class="card  animate__animated animate__fadeInRight animate__delay-1s">
-                        <div class="img-wrap">
-                            <img src="./assets/image/matic/3.png" alt="matic1">
-                        </div>
-                        <div class="text">
-                            <h3>KzX</h3>
-                            <p>Harga mulai</p>
-                            <h3>Rp 32.999.999,00</h3>
-                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
-                        </div>
-                    </section>
-                </a>
-                <a href="">
-                    <section class="card animate__animated animate__fadeInRight animate__delay-1s">
+                    <section class="card matic animate__animated animate__fadeInRight animate__delay-1s">
                         <div class="img-wrap">
                             <img src="./assets/image/matic/4.png" alt="matic1">
                         </div>
@@ -125,7 +86,7 @@
                     </section>
                 </a>
                 <a href="">
-                    <section class="card  animate__animated animate__fadeInRight animate__delay-1s">
+                    <section class="card  matic animate__animated animate__fadeInRight animate__delay-1s">
                         <div class="img-wrap">
                             <img src="./assets/image/matic/7.png" alt="matic1">
                         </div>
@@ -138,9 +99,126 @@
                     </section>
                 </a>
                 <a href="">
-                    <section class="card  animate__animated animate__fadeInRight animate__delay-1s">
+                    <section class="card  matic animate__animated animate__fadeInRight animate__delay-1s">
                         <div class="img-wrap">
                             <img src="./assets/image/matic/8.png" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  e-motor animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/e-motor/3.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  e-motor animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/e-motor/2.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  e-motor animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/e-motor/1.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  cub animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/cub/1.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  cub animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/cub/2.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card  cub animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/cub/3.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card sport animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/sport/1.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card sport animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/sport/2.jpeg" alt="matic1">
+                        </div>
+                        <div class="text">
+                            <h3>TZk 4000</h3>
+                            <p>Harga mulai</p>
+                            <h3>Rp 33.599.999,00</h3>
+                            <p id="detail">Detail<img src="./assets/image/icon-panah.png" alt="vef"></p>
+                        </div>
+                    </section>
+                </a>
+                <a href="">
+                    <section class="card sport animate__animated animate__fadeInRight animate__delay-1s">
+                        <div class="img-wrap">
+                            <img src="./assets/image/sport/3.jpeg" alt="matic1">
                         </div>
                         <div class="text">
                             <h3>TZk 4000</h3>
@@ -153,5 +231,6 @@
             </div>
         </div>
     </main>
+    <script src="assets/script/product.js"></script>
 </body>
 </html>
