@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: darkblue;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 *{
     scroll-behavior: smooth;
@@ -32,13 +34,12 @@ background: -moz-linear-gradient(182deg,darkblue 5%, #000000 50%, #000000 100%);
     height: 8vh;
 }
 
-.container {
-    height: 100vh;
+.navigasi{
+    margin-left: auto;
 }
 
 .navigasi ul{
     display: flex;
-    margin-left: 40vw;
 
 }
 
@@ -69,6 +70,214 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 }
 
 /* content  */
+/* corporate  */
+.introduce-corporate{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background-image: url(/assets/image/bg-corporate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.introduce-corporate img{
+    height: 40vh;
+    margin-top: 50px;
+    margin: 30px;
+    margin-left: 50vw;
+    box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
+    border-radius: 10px;
+}
+.introduce-corporate .desc-corporate{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #0000009c;
+    line-height: 1.5em;
+    margin-left: 50vw;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(1, 27, 62, 0.5);
+
+}
+.desc-corporate h2 {
+    font-size: 28pt;
+    letter-spacing: 2px;
+}
+.desc-corporate p{
+    margin-bottom:20px ;
+    text-align: justify;
+}
+/* vair introduce  */
+.introduce-vair{
+    background-color: #000000;
+    color: aliceblue;
+    padding: 30px;
+    text-align: center;
+}
+.introduce-vair h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26pt;
+    letter-spacing: 3px;
+}
+.intro-content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.intro-content .intro-paragraph{
+    line-height: 2em;
+    font-size: 14pt;
+    text-align: justify;
+    width: 50vw;
+    margin-right: 30px;
+}
+.intro-content img{
+    width: 600px;
+    height: 400px;
+}
+
+/* visi misi  */
+.visi-misi {
+    display: flex;
+    text-align: center;
+    background-color: aliceblue;    
+}
+.visi{
+    background-color: rgb(0, 13, 162);
+    margin: 30px;
+    padding: 40px;
+    width: 50vw;
+    color: aliceblue;
+    border-radius: 10%;
+}
+.visi h2{
+    font-size: 24pt;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+}
+.visi p {
+    text-align: justify;
+    font-size: 16pt;
+    line-height: 1.5em;
+}
+.misi{
+    background-color: rgb(0, 13, 162);
+    margin: 30px;
+    padding: 40px;
+    width: 50vw;
+    color: aliceblue;
+    border-radius: 10%;
+}
+.misi h2{
+    font-size: 24pt;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+}
+.misi ol {
+    text-align: justify;
+    font-size: 16pt;
+    line-height: 1.5em;
+}
+
+/* komitmen  */
+.komitmen-layanan-komunitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+    color: aliceblue;
+  }
+  
+  
+  .komitmen-layanan-komunitas ul {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center; 
+}
+  
+  .komitmen-layanan-komunitas ul li {
+    list-style: none;
+    padding: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .komitmen-layanan-komunitas ul li:hover {
+    background-color: aliceblue;
+    color: black;
+  }
+  
+  .komitmen-layanan-komunitas .komitmen,
+  .komitmen-layanan-komunitas .Community,
+  .komitmen-layanan-komunitas .Service {
+    display: none;
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  .komitmen-layanan-komunitas .active {
+    display: block;
+  }
+
+
+.desc-komitmen h2{
+    font-size: 24pt;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+.desc-komitmen {
+    padding: 30px;
+    width: 60vw;
+}
+.desc-komitmen img{
+    width: 30vw;
+}
+.desc-komitmen p {
+    text-align: justify;
+    font-size: 16pt;
+    line-height: 1.5em;
+}
+/* channel  */
+.channel {
+    display: flex;
+    background-color: darkblue;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 70px;
+    height: 70px;
+}
+.channel p {
+    letter-spacing: 2px;
+    font-size: 30pt;
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.channel p span {
+    color: rgb(255, 0, 0);
+}
+
+.channel-icon {
+    display: flex;
+}
+
+.channel-icon a {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: .2s;
+    color: aliceblue;
+}
+.channel a:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+    color: red;
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
 
 
 /* footer  */
@@ -135,6 +344,14 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
 .left-footer-content ul {
     margin-left: 20%;
     line-height: 2em;
+}
+.instansi{
+    padding: 20px;
+    text-align: center;
+}
+.instansi img{
+    height: 100px;
+    margin: 10px;
 }
 
 .right-footer{
@@ -247,3 +464,19 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
         width: 100%;
     }
 }
+.slide-in {
+    animation: slideIn 2s ease; /* Ganti dengan animasi dan waktu yang diinginkan */
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Ganti dengan jarak slide yang diinginkan */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

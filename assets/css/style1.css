@@ -81,9 +81,6 @@ background: -moz-linear-gradient(182deg,darkblue 5%, #000000 50%, #000000 100%);
     height: 8vh;
 }
 
-.container {
-    
-}
 .navigasi{
     margin-left: auto;
 }
@@ -354,11 +351,14 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     padding: 30px;
     border-top-left-radius: 70px;
 }
+.card-testi p {
+    line-height: 1.4em;
+}
 
 /* channel  */
 .channel {
     display: flex;
-    background-color: #830d0d;
+    background-color: darkblue;
     justify-content:space-between;
     align-items: center;
     padding: 0px 70px;
@@ -371,7 +371,7 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     font-family: 'Bebas Neue', sans-serif;
 }
 .channel p span {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 .channel-icon {
@@ -383,16 +383,16 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     padding: 10px;
     border-radius: 30px;
     transition: .2s;
+    color: aliceblue;
 }
 .channel a:hover{
     background-color: rgba(0, 0, 0, 0.637);
+    color: red;
     transform: translateY(-10px);
     transition: .5s;
 }
 
-.channel-icon i {
-    color: aliceblue;
-}
+
 
 
 
@@ -461,6 +461,14 @@ box-shadow: -12px 11px 3px -3px rgba(0,153,255,0.62);
     margin-left: 20%;
     line-height: 2em;
 }
+.instansi{
+    padding: 20px;
+    text-align: center;
+}
+.instansi img{
+    height: 100px;
+    margin: 10px;
+}
 
 .right-footer{
     width: auto;
@@ -518,6 +526,7 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
     background-color: #000000;
 }
 
+
 /* keyframes */
 @keyframes fadeInOut {
     0% {
@@ -574,7 +583,7 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
 }
 
 .slide-in {
-    animation: slideIn 1s ease; /* Ganti dengan animasi dan waktu yang diinginkan */
+    animation: slideIn 2s ease; /* Ganti dengan animasi dan waktu yang diinginkan */
     opacity: 1;
     transform: translateX(0);
   }
@@ -590,5 +599,6 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
     }
   }
   
+
 
 
