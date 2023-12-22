@@ -38,17 +38,13 @@ header {
   background: transparent;
   align-items: center;
   padding: 0;
-  width: 100%; /* Set the width to 100% */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 #logo-vair {
   margin-left: 50px;
   height: 8vh;
-}
-
-.container {
-  /* Add your container styles if needed */
 }
 
 .navigasi {
