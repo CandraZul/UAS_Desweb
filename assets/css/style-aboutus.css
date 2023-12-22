@@ -48,7 +48,6 @@ background: -moz-linear-gradient(182deg,darkblue 5%, #000000 50%, #000000 100%);
     margin-left: 30px;
     color: white;
     padding: 15px;
-    transition: .2s;
 }
 .navigasi ul a:hover {
     background-color: aliceblue;
@@ -467,7 +466,7 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
     }
 }
 .slide-in {
-    animation: slideIn 2s ease; /* Ganti dengan animasi dan waktu yang diinginkan */
+    animation: slideIn 2s ease; 
     opacity: 1;
     transform: translateX(0);
   }
@@ -475,7 +474,7 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
   @keyframes slideIn {
     from {
       opacity: 0;
-      transform: translateX(-50px); /* Ganti dengan jarak slide yang diinginkan */
+      transform: translateX(-50px); 
     }
     to {
       opacity: 1;
@@ -497,17 +496,23 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
         background: darkblue;
         width: 100%;
         z-index: 1;
+        transition: .3s;
     }
 
     .navigasi ul.show {
         display: flex;
+        transition: .2s;
     }
 
     .navigasi ul a {
         text-align: center;
         padding: 15px;
+        margin-left: 0;
         width: 100%;
         box-sizing: border-box;
+    }
+    .navigasi ul a li {
+        font-size: 12pt;
     }
 
     .menu-icon {
