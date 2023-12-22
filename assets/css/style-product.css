@@ -121,6 +121,11 @@ main{
     background-color: white;
     border-radius: 10px;
 }
+
+.card a{
+    color: #4a4a4a;
+}
+
 .img-wrap{
     background-size: cover;
     background-position: center;
@@ -177,13 +182,13 @@ main{
     color: rgb(253, 0, 0.4);
 }
 /* card animation */
-.product-wrap a:nth-child(1){
+.product-wrap .card:nth-child(1){
     --animate-delay:0.5s;
 }
-.product-wrap a:nth-child(2){
+.product-wrap .card:nth-child(2){
     --animate-delay:1s;
 }
-.product-wrap a:nth-child(3){
+.product-wrap .card:nth-child(3){
     --animate-delay:1.5s;
 }
 
