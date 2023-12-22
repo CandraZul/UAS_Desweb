@@ -602,6 +602,23 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
   @media screen and (max-width: 768px){
     body {
         overflow-x: hidden;
+        font-size: 80%;
+    }
+    #get-Started{
+        font-size: 12pt;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-decoration: none;
+        border: 2px solid aliceblue;
+        padding: 1px 10px;
+        margin-left: 40vw;
+        margin-top: 70vh;
+        border-radius: 30px;
+        z-index: 2;
+        animation: fadeInOut 1.2s infinite;
+        animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+        transition: .3s;
     }
     /* header  */
     .navigasi ul {

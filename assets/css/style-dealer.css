@@ -382,6 +382,7 @@ background: -moz-linear-gradient(90deg,#000000 0%, #011253 80%);
   @media screen and (max-width: 768px){
     body {
         overflow-x: hidden;
+        font-size: 80%;
     }
     /* header  */
     .navigasi ul {
